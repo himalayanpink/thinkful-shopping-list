@@ -1,0 +1,122 @@
+*{
+	box-sizing: border-box;
+	letter-spacing: 2px;
+}
+
+body{
+	background-color: #f7f2ee;
+	color: #525b62;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+#all-content{
+	height: 800px;
+	width: 85%;
+	max-width: 950px;
+	background-color: white;
+	margin: auto;
+	background-image: url('../images/another-texture.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#title{
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 25px; 
+}
+
+.thin-pencil{
+	width: 30%;
+	height: 2px;
+	opacity: 0.5;
+}
+
+.thick-pencil{
+	width: 95%
+}
+
+#title h1, #title h2{
+	transform:scale(1.5,1); /* W3C */
+	-webkit-transform:scale(1.5,1); /* Safari and Chrome */
+	-moz-transform:scale(1.5,1); /* Firefox */
+	-ms-transform:scale(1.5,1); /* IE 9 */
+	-o-transform:scale(1.5,1); /* Opera */
+}
+
+#title h1{
+	margin-top: -20px;
+	margin-bottom: -9px;
+}
+
+#title h2{
+	font-size: 1em;
+	margin-top: 7px;
+	margin-bottom: 27px;
+}
+
+#list-space{
+	margin-left: 55px;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	position: relative;
+	vertical-align: middle;
+	height: 30px;
+	/*width: 200px;*/
+	margin-top: 9px;
+}
+
+.plus{
+	display: inline-block;
+	background-image: url('../images/plus-sign-green.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.minus{
+	background-image: url('../images/minus-sign-red.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	display: none;
+}
+
+.plus:hover, .minus:hover{
+	cursor: pointer;
+}
+
+/*.form-box{
+	display: inline-block;
+	margin-left: 5px;
+}
+*/
+
+form{
+	display: none;
+}
+
+input[type=text]{
+	background-color: transparent;
+	border-style: none;
+	border-width: 0px 0px 2px 0px;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: brown;
+    border-radius: 2px;
+}
